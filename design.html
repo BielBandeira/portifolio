@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design — Gabriel Bandeira</title>
+<meta name="description" content="Galeria de trabalhos e experimentos de design de Gabriel Henrique Bandeira da Silva.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======================================================
+     COMO EDITAR ESTA GALERIA
+     1. Cada peça é um bloco <figure class="gallery-item">.
+     2. Para adicionar uma imagem: troque o conteúdo do
+        <div class="gallery-thumb"> por
+        <img src="assets/nome-da-imagem.png" alt="descrição da peça">
+     3. Para adicionar uma NOVA peça: copie um bloco inteiro
+        <figure class="gallery-item">...</figure> e cole abaixo,
+        editando a legenda em <figcaption>.
+     ====================================================== -->
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="index.html" class="logo">gabriel<span class="cursor-blink">_</span></a>
+  <nav class="nav" id="mainNav">
+    <a href="index.html#inicio" class="nav-link" data-path="~/inicio">início</a>
+    <a href="index.html#projetos" class="nav-link" data-path="~/projetos">projetos</a>
+    <a href="design.html" class="nav-link active" data-path="~/design">design</a>
+    <a href="index.html#contato" class="nav-link" data-path="~/contato">contato</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+  <section class="hero hero-simple">
+    <a href="index.html" class="back-link">← voltar ao portfólio</a>
+    <p class="eyebrow">// design/</p>
+    <h1 class="hero-title">Trabalhos com design</h1>
+    <p class="hero-subtitle">
+      Telas, artes e experimentos visuais que fui produzindo ao longo
+      da minha trajetória — do Técnico em Web Design até hoje.
+    </p>
+  </section>
+
+  <section class="section" id="galeria">
+    <p class="section-eyebrow">// galeria/</p>
+    <h2 class="section-title">Galeria</h2>
+    <p class="section-lead">Substitua os quadros abaixo pelas imagens dos seus trabalhos — instruções no comentário no topo do HTML.</p>
+
+    <div class="gallery-grid">
+
+      <figure class="gallery-item">
+        <div class="gallery-thumb" aria-hidden="true">
+          <img src="imgs/p1.png" alt="descrição da peça">
+        </div>
+        <figcaption>Venda para Marketplace</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <div class="gallery-thumb" aria-hidden="true">
+          <img src="imgs/p2.png" alt="descrição da peça">
+        </div>
+        <figcaption>Venda para Marketplace</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <div class="gallery-thumb" aria-hidden="true">
+           <img src="imgs/p3.png" alt="descrição da peça">
+        </div>
+        <figcaption>Venda para Marketplace</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <div class="gallery-thumb" aria-hidden="true">
+          <img src="imgs/p4.png" alt="descrição da peça">
+        </div>
+        <figcaption>Informativo para grafica</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <div class="gallery-thumb" aria-hidden="true">
+          <img src="imgs/p5.png" alt="descrição da peça">
+        </div>
+        <figcaption>Imagem para carrosel instagram</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <div class="gallery-thumb" aria-hidden="true">
+          <img src="imgs/p6.png" alt="descrição da peça">
+        </div>
+        <figcaption>Identidade visual para TCC</figcaption>
+      </figure>
+
+       <figure class="gallery-item">
+        <div class="gallery-thumb" aria-hidden="true">
+          <img src="imgs/p7.png" alt="descrição da peça">
+        </div>
+        <figcaption>Identidade visual para TCC</figcaption>
+      </figure>
+
+       <figure class="gallery-item">
+        <div class="gallery-thumb" aria-hidden="true">
+          <img src="imgs/p8.png" alt="descrição da peça">
+        </div>
+        <figcaption>Identidade visual para Projeto Universitario</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <div class="gallery-thumb" aria-hidden="true">
+          <img src="imgs/p9.jpeg" alt="descrição da peça">
+        </div>
+        <figcaption>ILogo para projeto pessoal</figcaption>
+      </figure>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Barueri–SP · construído com HTML, CSS e JS puros.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

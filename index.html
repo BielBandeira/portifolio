@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel Bandeira — Desenvolvedor</title>
+<meta name="description" content="Portfólio de Gabriel Henrique Bandeira da Silva — estudante de Sistemas de Informação e desenvolvedor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="#inicio" class="logo">gabriel<span class="cursor-blink">_</span></a>
+  <nav class="nav" id="mainNav">
+    <a href="#inicio" class="nav-link" >início</a>
+    <a href="#sobre" class="nav-link"  >sobre</a>
+    <a href="#experiencia" class="nav-link" >experiência</a>
+    <a href="#projetos" class="nav-link" >projetos</a>
+    <a href="#skills" class="nav-link" >skills</a>
+    <a href="#contato" class="nav-link" >contato</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">// coletânea de projetos & trajetória</p>
+        <h1 class="hero-title">Gabriel Henrique<br>Bandeira da Silva</h1>
+        <p class="hero-subtitle">
+          Um registro dos projetos, experiências e trabalhos que fui
+          construindo pelo caminho — de desenvolvimento a design.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">ver projetos</a>
+          <a href="imgs/GABRIEL HENRIQUE BANDEIRA (1).pdf" class="btn btn-ghost" download>ver currículo ↓</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/BielBandeira" target="_blank" rel="noopener">github.com/BielBandeira</a>
+          <span class="dot-sep">·</span>
+          <a href="https://www.linkedin.com/in/gabriel-bandeira-15520725b/" target="_blank" rel="noopener">linkedin/gabriel-bandeira</a>
+        </div>
+      </div>
+
+      <div class="terminal" role="img" aria-label="Terminal simulando o comando whoami">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-title">gabriel@portfolio: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p class="term-line"><span class="prompt">gabriel@portfolio</span><span class="path">:~$</span> <span id="typedCommand"></span><span class="term-cursor">▌</span></p>
+          <div id="typedOutput" class="term-output"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="section" id="sobre">
+    <p class="section-eyebrow">// sobre.md</p>
+    <h2 class="section-title">Formação</h2>
+    <div class="about-grid about-grid-solo">
+      <div class="formacao-list">
+        <h3 class="formacao-heading">Trajetória acadêmica</h3>
+
+        <div class="formacao-item">
+          <div class="formacao-when">Fev 2024 — Dez 2028</div>
+          <div class="formacao-what">
+            <strong>Bacharelado em Sistemas de Informação</strong>
+            <span class="formacao-org">Universidade Presbiteriana Mackenzie</span>
+            <ul>
+              <li>Aprovado com bolsa integral</li>
+              <li>Aluno monitor de Programação Orientada a Objetos</li>
+              <li>Média ponderada: 8,37</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="formacao-item">
+          <div class="formacao-when">Jan 2020 — Dez 2024</div>
+          <div class="formacao-what">
+            <strong>Técnico em Web Design</strong>
+            <span class="formacao-org">ITB Brasílio Flores de Azevedo</span>
+            <ul>
+              <li>Nota máxima no TCC</li>
+              <li>Gerente do projeto de conclusão de curso</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="formacao-item">
+          <div class="formacao-when">Jan 2020 — Dez 2024</div>
+          <div class="formacao-what">
+            <strong>Ensino Médio</strong>
+            <span class="formacao-org">ITB Brasílio Flores de Azevedo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIÊNCIA (estilo git log) ============ -->
+  <section class="section" id="experiencia">
+    <p class="section-eyebrow">// git log --experiencia</p>
+    <h2 class="section-title">Experiência profissional</h2>
+
+    <div class="commit-log">
+
+      <article class="commit">
+        <div class="commit-rail">
+          <span class="commit-hash">wae2026</span>
+          <span class="commit-line"></span>
+        </div>
+        <div class="commit-body">
+          <div class="commit-head">
+            <h3>Estágio em Desenvolvimento</h3>
+            <span class="tag tag-current">atual</span>
+          </div>
+          <p class="commit-meta">WAE · Sistema de Gestão Educacional · Março 2026 — Atual</p>
+          <ul>
+            <li>Participação na modernização de sistema corporativo por meio da migração de funcionalidades de aplicação Windows para plataforma web</li>
+            <li>Criação e padronização de telas voltadas à experiência do usuário.</li>
+            <li>Desenvolvimento e adaptação de telas utilizando GeneXus e WorkWithPlus</li>
+            <li>Execução de testes, validações e apoio na implementação de novas funcionalidades</li>
+            <li>Colaboração com análise de requisitos e evolução contínua do sistema</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="commit">
+        <div class="commit-rail">
+          <span class="commit-hash">olv2024</span>
+          <span class="commit-line"></span>
+        </div>
+        <div class="commit-body">
+          <div class="commit-head"><h3>Auxiliar Administrativo</h3></div>
+          <p class="commit-meta">Oliveira Multisserviços · Set 2024 — Mar 2025</p>
+          <ul>
+            <li>Desenvolvimento de scripts em Python para automação de tarefas internas</li>
+            <li>Otimização de processos e organização de dados em planilhas</li>
+            <li>Criação de materiais gráficos e artes para comunicação interna e atendimento.</li>
+            <li>Desenvolvimento de documentos visuais e apresentações.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="commit">
+        <div class="commit-rail">
+          <span class="commit-hash">smd2023</span>
+        </div>
+        <div class="commit-body">
+          <div class="commit-head"><h3>Estágio em Comunicação</h3></div>
+          <p class="commit-meta">SMD Sofia Marketing Digital · Fev 2023 — Out 2023</p>
+          <ul>
+            <li>Produção de conteúdos para redes sociais.</li>
+            <li>ACriação de artes para campanhas digitais.</li>
+            <li>Apoio na identidade visual de materiais promocionais.</li>
+            <li>Gestão de mídias sociais.</li>
+            <li>Desenvolvimento de campanhas que contribuíram para o fechamento de 17 contratos em seis meses.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ PROJETOS ============ -->
+  <section class="section" id="projetos">
+    <p class="section-eyebrow">// projetos/</p>
+    <h2 class="section-title">Projetos</h2>
+    <p class="section-lead">Adicione capturas de tela dos seus projetos substituindo os quadros abaixo — instruções no comentário no topo do HTML.</p>
+
+    <div class="project-grid">
+
+      <!-- PROJETO 1 -->
+      <article class="project-card">
+        <div class="project-thumb" aria-hidden="true">
+          <img src="imgs/cqf.png" alt="ComoQueFaz?">
+        </div>
+        <div class="project-info">
+          <div class="project-head">
+            <h3>ComoQueFaz?</h3>
+            <span class="grade-badge">nota máxima</span>
+          </div>
+          <p class="project-desc">
+            Projeto de conclusão de curso técnico. Solução completa desenvolvida
+            com JavaScript, Node.js e SQL — atuei como gerente do projeto,
+            responsável pela coordenação da equipe, arquitetura da solução,
+            documentação e entrega final.
+          </p>
+          <div class="project-langs">
+            <span class="lang"><i class="lang-dot" style="--c:#f7df1e"></i>JavaScript</span>
+            <span class="lang"><i class="lang-dot" style="--c:#3c873a"></i>Node.js</span>
+            <span class="lang"><i class="lang-dot" style="--c:#e38c00"></i>SQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/BielBandeira/Como_Que_Faz" target="_blank" rel="noopener">ver código →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJETO 2 -->
+      <article class="project-card">
+        <div class="project-thumb" aria-hidden="true">
+          <img src="imgs/ecom.png" alt="descrição">
+        </div>
+        <div class="project-info">
+          <div class="project-head">
+            <h3>Ecomap</h3>
+            <span class="grade-badge grade-badge-alt">projeto acadêmico</span>
+          </div>
+          <p class="project-desc">
+            Projeto desenvolvido na disciplina ProjetoWeb 2 (Universidade Mackenzie).
+            Sistema construído com NestJS, JavaScript e MongoDB, com implementação
+            de funcionalidades, integração com banco de dados e estruturação da API.
+          </p>
+          <div class="project-langs">
+            <span class="lang"><i class="lang-dot" style="--c:#e0234e"></i>NestJS</span>
+            <span class="lang"><i class="lang-dot" style="--c:#f7df1e"></i>JavaScript</span>
+            <span class="lang"><i class="lang-dot" style="--c:#4db33d"></i>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/BielBandeira/ecomap" target="_blank" rel="noopener">ver código →</a>
+          </div>
+        </div>
+      </article>
+
+  
+
+      <!-- PROJETO 4 -->
+      <article class="project-card">
+        <div class="project-thumb" aria-hidden="true">
+          <img src="imgs/idosos.png" alt="descrição">
+        </div>
+        <div class="project-info">
+          <div class="project-head">
+            <h3>Inclusão Digital para Idosos</h3>
+            <span class="grade-badge grade-badge-alt">extensão / voluntariado</span>
+          </div>
+          <p class="project-desc">
+            Projeto extensionista com atuação voluntária auxiliando idosos em
+            aulas de informática básica, contribuindo para inclusão digital
+            e desenvolvimento social.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">saiba mais →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJETO 5 — leva para uma página de galeria à parte -->
+      <article class="project-card">
+        <div class="project-thumb" aria-hidden="true">
+          <img src="imgs/ds.png" alt="descrição">
+        </div>
+        <div class="project-info">
+          <div class="project-head">
+            <h3>Trabalhos com Design</h3>
+            <span class="grade-badge grade-badge-alt">galeria</span>
+          </div>
+          <p class="project-desc">
+            Uma coletânea das minhas experiências com design — telas,
+            artes e experimentos visuais que fui produzindo ao longo do caminho.
+          </p>
+          <div class="project-links">
+            <a href="design.html">ver galeria completa →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Para adicionar um novo projeto, copie um <article class="project-card">
+           inteiro (de <article> até </article>) e cole aqui embaixo. -->
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <p class="section-eyebrow">// habilidades.json</p>
+    <h2 class="section-title">Habilidades técnicas</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Linguagens & Desenvolvimento</h3>
+        <ul class="skill-tags">
+          <li>Python</li><li>Java</li><li>JavaScript</li><li>Node.js</li>
+          <li>NestJS</li><li>GeneXus</li><li>Desenvolvimento Web</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Banco de Dados</h3>
+        <ul class="skill-tags">
+          <li>SQL</li><li>MongoDB</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Design</h3>
+        <ul class="skill-tags">
+          <li>Canva</li><li>Figma</li>
+          <li>Adobe Photoshop</li><li>UX Design</li>
+          <li>Prototipação</li><li>Identidade Visual</li>
+        </ul>
+      </div>
+       <div class="skill-group">
+        <h3>Qualidade & Engenharia de Software</h3>
+        <ul class="skill-tags">
+          <li>Testes e validação</li><li>Análise de requisitos</li>
+          <li>Tratamento de erros</li><li>Documentação técnica</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Ferramentas</h3>
+        <ul class="skill-tags">
+          <li>Git</li><li>GitHub</li><li>Excel</li><li>Word</li><li>PowerPoint</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Infraestrutura</h3>
+        <ul class="skill-tags">
+          <li>TCP/IP</li><li>HTTP</li><li>Windows</li><li>Linux (noções)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="section section-contact" id="contato">
+    <p class="section-eyebrow">// contato.sh</p>
+    <h2 class="section-title">Vamos conversar</h2>
+    <p class="section-lead">
+      Se curtiu algo por aqui ou quer trocar uma ideia, me chama:
+    </p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:gabrielzandeira@gmail.com">
+        <span class="contact-label">email</span>
+        <span class="contact-value">gabrielzandeira@gmail.com</span>
+      </a>
+      <a class="contact-card" href="https://github.com/BielBandeira" target="_blank" rel="noopener">
+        <span class="contact-label">github</span>
+        <span class="contact-value">github.com/BielBandeira</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/gabriel-bandeira-15520725b/" target="_blank" rel="noopener">
+        <span class="contact-label">linkedin</span>
+        <span class="contact-value">linkedin/gabriel-bandeira</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Barueri–SP · construído com HTML, CSS e JS puros.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
